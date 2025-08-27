@@ -4,14 +4,13 @@ This project is an end-to-end data analysis pipeline built using an IMDb movie d
 ---
 
 ## Structure
-IMDb-EndToEnd/
-│── data_raw/          # Original source files (CSV, SQLite)
-│── data_processed/    # Cleaned & transformed outputs (Parquet, CSV)
-│── notebooks/         # Jupyter notebooks for profiling & EDA
-│── scripts/           # Python scripts for ETL and processing
-│── visuals/           # Saved plots and figures
-│── requirements.txt   # Project dependencies
-│── README.md          # Project documentation
+- data_raw: Original source files (CSV, SQLite)
+- data_processed: Cleaned & transformed outputs (Parquet, CSV)
+- notebooks: Jupyter notebooks for profiling EDA
+- scripts: Python scripts for ETL and processing
+- visuals: Saved plots and figures
+- requirements.txt: Project dependencies
+- READMD.md: Project documentation
 
 ---
 
