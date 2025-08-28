@@ -1,5 +1,5 @@
 ## IMDb End-to-End Data Analysis
-This project is an end-to-end data analysis pipeline built using an IMDb movie dataset. It demonstrates the complete workflow of a data analyst from raw data ingestion through transformation, exploratory analysis, and visualization. 
+An end-to-end analysis of IMDb movie data, combining SQL, Python and visualization to uncover trends in ratings, genres, budgets, and box office performance. 
 
 ---
 
@@ -26,6 +26,11 @@ This project is an end-to-end data analysis pipeline built using an IMDb movie d
 - Movies Per Decade (with and without labels)
 - Movies per Genre (distributed)
 - Runtime Distribution (histogram of movie lengths)
+- Top Actors by Film Count (horizontal of movie lengths)
+- Ratings by Year (average IMDb ratings over time)
+- Budget vs. Revenue by Year (line chart comparison)
+- Correlation Analysis (budget, revenue, IMDb rating)
+- Directors - Quality & Quantity (ratings vs. film counts)
 
 ---
 
@@ -39,16 +44,30 @@ This project is an end-to-end data analysis pipeline built using an IMDb movie d
 
 ## Future Additions
 - Expanding analysis to include:
-    - Top actors/actresses by number of films.
-    - Trends in average movie ratings over time.
-    - Relationship between budget, revenue, and IMDb rating.
-    - Adding SQL queries directly for data exploration.
+    - Adding additional SQL queries to expand exploratory analysis.
+    - Developing decade-level visualizations (e.g, average ratings, budget,
+      revenue).
+    - Incorporate KPI-style dashboards in Tableau/Power BI for interactive
+      exploration.
+    - Perform deeper storytelling analysis around trends (e.g., genre
+      evolution, box office success drivers).
+    - Refine README with visuals, insights, and project flow for hiring
+      managers. 
+    - Top actors/actresses by number of films - completed. 
+    - Trends in average movie ratings over time - completed. 
+    - Relationship between budget, revenue, and IMDb rating - completed. 
+    - Adding SQL queries directly for data exploration - in progress. 
     - Integrate a dashboard (Tableau or Power BI) version of visuals.
     - Creating a summary report notebook with insights + storytelling.
  
 ---
 
 ## Key Takeaways (so far)
-Clear rise in movie production during the 1990s–2010s.
-Ratings distribution is skewed around 6–7, not bell-shaped.
-Certain genres dominate the dataset more than others.
+- Clear rise in movie production during the 1990s–2010s.
+- Ratings distribution is skewed around 6–7, not bell-shaped.
+- Certain genres dominate the dataset more than others.
+- Audience ratings have gradually declined over the past decades.
+- Larger budgets often correlate with higher revenues, though with significant
+  variability.
+- A handful of directors (e.g., Spielberg, Scorseses, Coppola) consistently
+  combine strong output with high average IMDb ratings. 
