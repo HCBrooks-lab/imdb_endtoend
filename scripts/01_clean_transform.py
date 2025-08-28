@@ -5,7 +5,7 @@ Run:  python scripts/01_clean_transform.py
 import pandas as pd
 import numpy as np
 # From sqlalchemy import create_engine  
-from utils.io_paths import DB_PATH, CSV_PATH, OUTPUT_CLEAN, ensure_dirs
+from scripts.utils.io_paths import DB_PATH, CSV_PATH, OUTPUT_CLEAN, ensure_dirs
 from pathlib import Path
 
 def read_sources() -> pd.DataFrame:
