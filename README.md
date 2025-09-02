@@ -3,7 +3,8 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
 
 ---
 
-## Structure
+## Structure 
+```
 ├── data_raw/ # Original source files (CSV, SQLite)
 ├── data_processed/ # Cleaned & transformed outputs (Parquet, CSV)
 ├── notebooks/ # Jupyter notebooks for EDA & profiling
@@ -11,6 +12,7 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
 ├── visuals/ # Saved plots and figures
 ├── requirements.txt # Project dependencies
 └── README.md # Documentation
+```
 
 ---
 
