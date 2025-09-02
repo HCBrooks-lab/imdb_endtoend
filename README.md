@@ -1,16 +1,16 @@
 ## IMDb End-to-End Data Analysis
-An end-to-end analysis of IMDb movie data, combining SQL, Python and visualization to uncover trends in ratings, genres, budgets, and box office performance. 
+An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualization to uncover trends in ratings, genres, budgets, and box-office performance. This project demonstrates how to take raw, unstructured data and transform it into actionable insights, simulating a real-world data workflow. 
 
 ---
 
 ## Structure
-- data_raw: Original source files (CSV, SQLite)
-- data_processed: Cleaned & transformed outputs (Parquet, CSV)
-- notebooks: Jupyter notebooks for profiling EDA
-- scripts: Python scripts for ETL and processing
-- visuals: Saved plots and figures
-- requirements.txt: Project dependencies
-- READMD.md: Project documentation
+├── data_raw/ # Original source files (CSV, SQLite)
+├── data_processed/ # Cleaned & transformed outputs (Parquet, CSV)
+├── notebooks/ # Jupyter notebooks for EDA & profiling
+├── scripts/ # Python ETL and processing scripts
+├── visuals/ # Saved plots and figures
+├── requirements.txt # Project dependencies
+└── README.md # Documentation
 
 ---
 
@@ -23,14 +23,21 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python and visualizati
 ---
 
 ## Current Analysis and Visuals
-- Movies Per Decade (with and without labels)
-- Movies per Genre (distributed)
-- Runtime Distribution (histogram of movie lengths)
-- Top Actors by Film Count (horizontal of movie lengths)
+**Trends Over Time**
+- Movies per Decade (with and without labels)
 - Ratings by Year (average IMDb ratings over time)
 - Budget vs. Revenue by Year (line chart comparison)
+
+**Distribution**
+- Movies per Genre (distribution)
+- Runtime Distribution (histogram of movie lengths)
+
+**Entity-Level Analysis**
+- Top Actors by Film Count
+- Directors: Quality and Quantity (ratings vs. film counts)
+
+**Performance Drivers**
 - Correlation Analysis (budget, revenue, IMDb rating)
-- Directors - Quality & Quantity (ratings vs. film counts)
 
 ---
 
@@ -43,22 +50,14 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python and visualizati
 ---
 
 ## Future Additions
-- Expanding analysis to include:
-    - Adding additional SQL queries to expand exploratory analysis.
-    - Developing decade-level visualizations (e.g, average ratings, budget,
-      revenue).
-    - Incorporate KPI-style dashboards in Tableau/Power BI for interactive
-      exploration.
-    - Perform deeper storytelling analysis around trends (e.g., genre
-      evolution, box office success drivers).
-    - Refine README with visuals, insights, and project flow for hiring
-      managers. 
-    - Top actors/actresses by number of films - completed. 
-    - Trends in average movie ratings over time - completed. 
-    - Relationship between budget, revenue, and IMDb rating - completed. 
-    - Adding SQL queries directly for data exploration - in progress. 
-    - Integrate a dashboard (Tableau or Power BI) version of visuals.
-    - Creating a summary report notebook with insights + storytelling.
+- Expand SQL queries for deeper exploration.
+- Develop decade-level visualizations (e.g., average ratings, budget, revenue).
+- Incorporate dashboards in Tableau or Power BI for interactive exploration.
+- Perform deeper storytelling analysis around trends (e.g., genre evolution, box
+  office success drivers).
+- Refine README with visuals, insights, and project flow.
+- Add SQL queries directly for data exploration.
+- Create a summary report notebook with insights and storytelling.
  
 ---
 
@@ -70,4 +69,17 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python and visualizati
 - Larger budgets often correlate with higher revenues, though with significant
   variability.
 - A handful of directors (e.g., Spielberg, Scorseses, Coppola) consistently
-  combine strong output with high average IMDb ratings. 
+  combine strong output with high average IMDb ratings.
+
+---
+
+## How to Run
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+3. Run the ETL process: python scripts/01_clean_transform.py
+4. Open notebooks to explore analysis: jupyter notebook
+   notebooks/01_data_profile.ipynb
+
+**This Project is ongoing and will be updated with additional SQL queries, visuals, and dashboards.**
