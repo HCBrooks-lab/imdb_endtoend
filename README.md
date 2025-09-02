@@ -80,8 +80,8 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
-3. Run the ETL process: python scripts/01_clean_transform.py
-4. Open notebooks to explore analysis: jupyter notebook
-   notebooks/01_data_profile.ipynb
+3. Run the ETL process: ```python scripts/01_clean_transform.py```
+4.  Open notebooks to explore analysis: ```jupyter notebook
+   notebooks/01_data_profile.ipynb```
 
 **This Project is ongoing and will be updated with additional SQL queries, visuals, and dashboards.**
