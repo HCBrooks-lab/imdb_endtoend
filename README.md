@@ -29,6 +29,13 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
 - Movies per Decade (with and without labels)
 - Ratings by Year (average IMDb ratings over time)
 - Budget vs. Revenue by Year (line chart comparison)
+- `agg_ratings_by_year.csv`
+- `agg_ratings_by_decade.csv`
+- `agg_top_actors.csv`
+
+### Sample Visual
+![Movies per Decade](visuals/movies_per_decade.png)
+
 
 **Distribution**
 - Movies per Genre (distribution)
@@ -81,7 +88,9 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
    ```bash
    pip install -r requirements.txt
 3. Run the ETL process: ```python scripts/01_clean_transform.py```
-4.  Open notebooks to explore analysis: ```jupyter notebook
-   notebooks/01_data_profile.ipynb```
+4. Open notebooks to explore analysis:
+   - `notebooks/01_data_profile.ipynb` - Dataset profiling & sanity checks.
+   - `notebooks/02_classic_analysis.ipynb - SQL queries, visuals and exports. 
+    
 
 **This Project is ongoing and will be updated with additional SQL queries, visuals, and dashboards.**
