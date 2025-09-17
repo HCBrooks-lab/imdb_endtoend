@@ -25,16 +25,19 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
 ---
 
 ## Current Analysis and Visuals
-**Trends Over Time**
+
+### Trends Over Time
 - Movies per Decade (with and without labels)
 - Ratings by Year (average IMDb ratings over time)
 - Budget vs. Revenue by Year (line chart comparison)
-- `agg_ratings_by_year.csv`
-- `agg_ratings_by_decade.csv`
-- `agg_top_actors.csv`
 
-### Sample Visual
+
+### Sample Visuals 
+**Movies Per Decade**
 ![Movies per Decade](visuals/movies_per_decade.png)
+
+**Top Directors by Avg IMDb Ratings**
+![Directors Ratings](visuals/top_directors.png)
 
 
 **Distribution**
@@ -46,7 +49,17 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
 - Directors: Quality and Quantity (ratings vs. film counts)
 
 **Performance Drivers**
-- Correlation Analysis (budget, revenue, IMDb rating)
+- Exploring budget/revenue relationships and rating drivers.
+  
+---
+
+## Exported Aggregates
+- `agg_ratings_by_year.csv`
+- `agg_ratings_by_decade.csv`
+- `agg_top_actors.csv`
+
+These outputs can be directly reused for dashboards in Tableau, Power BI, or Excel. 
+
 
 ---
 
@@ -60,26 +73,21 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
 
 ## Future Additions
 - Expand SQL queries for deeper exploration.
-- Develop decade-level visualizations (e.g., average ratings, budget, revenue).
+- Refine decade-level visuals (e.g., adding more comparisons). 
 - Incorporate dashboards in Tableau or Power BI for interactive exploration.
-- Perform deeper storytelling analysis around trends (e.g., genre evolution, box
-  office success drivers).
+- Perform deeper storytelling analysis around trends (e.g., genre evolution,
+  box office success drivers).
 - Refine README with visuals, insights, and project flow.
-- Add SQL queries directly for data exploration.
 - Create a summary report notebook with insights and storytelling.
  
 ---
 
 ## Key Takeaways (so far)
-- Clear rise in movie production during the 1990s–2010s.
-- Ratings distribution is skewed around 6–7, not bell-shaped.
-- Certain genres dominate the dataset more than others.
-- Audience ratings have gradually declined over the past decades.
-- Larger budgets often correlate with higher revenues, though with significant
-  variability.
-- A handful of directors (e.g., Spielberg, Scorseses, Coppola) consistently
-  combine strong output with high average IMDb ratings.
-
+- Clear rise in movie production during the 90's-2010s.
+- Average IMDb ratings hover around 6.7-7.0, but vary by decade.
+- Directors like Christopher Nolan and Stanley Kubrick consistently deliver
+  highly-rated films.
+  
 ---
 
 ## How to Run
@@ -92,5 +100,3 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
    - `notebooks/01_data_profile.ipynb` - Dataset profiling & sanity checks.
    - `notebooks/02_classic_analysis.ipynb - SQL queries, visuals and exports. 
     
-
-**This Project is ongoing and will be updated with additional SQL queries, visuals, and dashboards.**
