@@ -9,6 +9,7 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
 ├── data_processed/ # Cleaned & transformed outputs (Parquet, CSV)
 ├── notebooks/ # Jupyter notebooks for EDA & profiling
 ├── scripts/ # Python ETL and processing scripts
+├── sql/ # SQL queries
 ├── visuals/ # Saved plots and figures
 ├── requirements.txt # Project dependencies
 └── README.md # Documentation
@@ -57,6 +58,8 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
 - `agg_ratings_by_year.csv`
 - `agg_ratings_by_decade.csv`
 - `agg_top_actors.csv`
+- `decade_metrics.csv`
+- `top_genres_metrics.csv`
 
 These outputs can be directly reused for dashboards in Tableau, Power BI, or Excel. 
 
@@ -75,8 +78,8 @@ These outputs can be directly reused for dashboards in Tableau, Power BI, or Exc
 - Expand SQL queries for deeper exploration.
 - Refine decade-level visuals (e.g., adding more comparisons). 
 - Incorporate dashboards in Tableau or Power BI for interactive exploration.
-- Perform deeper storytelling analysis around trends (e.g., genre evolution,
-  box office success drivers).
+- Perform deeper storytelling analysis around trends (e.g., genre
+  evolution, box office success drivers).
 - Refine README with visuals, insights, and project flow.
 - Create a summary report notebook with insights and storytelling.
  
@@ -85,8 +88,8 @@ These outputs can be directly reused for dashboards in Tableau, Power BI, or Exc
 ## Key Takeaways (so far)
 - Clear rise in movie production during the 90's-2010s.
 - Average IMDb ratings hover around 6.7-7.0, but vary by decade.
-- Directors like Christopher Nolan and Stanley Kubrick consistently deliver
-  highly-rated films.
+- Directors like Christopher Nolan and Stanley Kubrick consistently
+  deliver highly-rated films.
   
 ---
 
@@ -97,6 +100,8 @@ These outputs can be directly reused for dashboards in Tableau, Power BI, or Exc
    pip install -r requirements.txt
 3. Run the ETL process: ```python scripts/01_clean_transform.py```
 4. Open notebooks to explore analysis:
-   - `notebooks/01_data_profile.ipynb` - Dataset profiling & sanity checks.
-   - `notebooks/02_classic_analysis.ipynb - SQL queries, visuals and exports. 
+   - `notebooks/01_data_profile.ipynb` - Dataset profiling & sanity
+      checks.
+   - `notebooks/02_classic_analysis.ipynb - SQL queries, visuals and
+      exports. 
     
