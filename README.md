@@ -38,8 +38,7 @@ An end-to-end analysis of IMDb movie data, combining SQL, Python, and visualizat
 ![Movies per Decade](visuals/movies_per_decade.png)
 
 **Top Directors by Avg IMDb Ratings**
-![Directors Ratings](visuals/top_directors.png)
-
+![Top Directors by Avg IMDb Ratings](figures/top_directors_avg_rating_topN.png)
 
 **Distribution**
 - Movies per Genre (distribution)
